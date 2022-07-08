@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">SympathyApp</string>
+    <string name="empty" />
+
+    <string name="txt_login">Login</string>
+    <string name="txt_sign_up">Sign Up</string>
+    <string name="txt_or">OR</string>
+    <string name="hint_email">Enter email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_password_confirm">Confirm password</string>
+    <string name="hint_fbr_no">FBR registered no</string>
+    <string name="hint_enter_title">Enter Title</string>
+    <string name="hint_amount_required">Enter Amount in PKR</string>
+    <string name="hint_enter_bio">Enter Bio</string>
+    <string name="hint_enter_description">Enter Description</string>
+    <string name="user_image">User image</string>
+    <string name="txt_map">Map</string>
+    <string name="txt_campaigns">Campaigns</string>
+    <string name="txt_chats">Chats</string>
+    <string name="txt_profile">Profile</string>
+
+    <string name="lbl_organisation_ngo">Select NGO</string>
+    <string name="lbl_organisation_ngo_info">NGO Detail</string>
+    <string name="lbl_organisation_info">Organization Info</string>
+    <string name="lbl_organisation_title">Organization Title</string>
+    <string name="lbl_organisation_bio">Organization Bio</string>
+    <string name="lbl_organisation_lat">Organization Latitude</string>
+    <string name="lbl_organisation_long">Organization Longitude</string>
+
+    <string name="lbl_campaign_info">Campaign Info</string>
+    <string name="lbl_campaign_detail">Campaign Detail</string>
+    <string name="lbl_campaign_code">Campaign Passcode</string>
+    <string name="lbl_campaign_donation">Campaign Donation</string>
+    <string name="lbl_campaign_title">Campaign Title</string>
+    <string name="lbl_campaign_description">Campaign Description</string>
+    <string name="lbl_campaign_amount">Amount Required</string>
+    <string name="lbl_amount">Amount</string>
+    <string name="lbl_campaign_amount_received">Amount Received</string>
+    <string name="lbl_continue">Continue</string>
+    <string name="lbl_save">Save</string>
+
+    <string name="title_programs">Programs</string>
+    <string name="title_campaigns">Campaigns</string>
+    <string name="title_shop">Shop</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="btn_donate">Donate</string>
+    <string name="btn_coordinate">Find Coordinate</string>
+    <string name="btn_add_campaigns">Add Campaign</string>
+
+    <string name="error_email_enter">Please enter email</string>
+    <string name="error_email_correct">Please enter valid email</string>
+    <string name="error_password">Please enter password</string>
+    <string name="error_password_length">Password should be at least 6 digits</string>
+    <string name="error_password_confirm">Please enter confirm password</string>
+    <string name="error_password_not_same">Password and confirm password not same</string>
+    <string name="error_fbr_no">Password enter FBR registered no</string>
+    <string name="error_enter_title">Please enter organization title</string>
+
+    <string name="message_no_campaign">No Campaigns Found</string>
+    <string name="message_no_doantions">No Donation Found</string>
+
+    <string name="unable_to_find_location">Unable to detect New location</string>
+    <string name="enable_provider">Please enable location from your device settings and internet for getting accurate timings of your area.</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_message">Enter message</string>
+    <string name="send">SEND</string>
+    <string name="lbl_update">Update</string>
+</resources>

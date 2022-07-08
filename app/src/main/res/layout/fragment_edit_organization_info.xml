@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_update"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/splash_background">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyle"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="@dimen/margin_ten"
+                    android:padding="@dimen/margin_ten"
+                    android:text="@string/lbl_organisation_info"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_ten">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyle"
+                    android:layout_marginTop="@dimen/margin_ten"
+                    android:padding="@dimen/margin_ten"
+                    android:text="@string/lbl_organisation_title"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="@dimen/margin_ten"
+                    android:background="@drawable/background_search"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_enter_title"
+                        android:inputType="textCapSentences"
+                        android:paddingHorizontal="@dimen/margin_five" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyle"
+                    android:padding="@dimen/margin_ten"
+                    android:text="@string/lbl_organisation_bio"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="@dimen/margin_ten"
+                    android:background="@drawable/background_search"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_bio"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/transparent"
+                        android:gravity="top"
+                        android:hint="@string/hint_enter_bio"
+                        android:inputType="textCapSentences"
+                        android:paddingHorizontal="@dimen/margin_five" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_close_edit_organization"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/margin_ten"
+        android:src="@drawable/ic_back"
+        android:tint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_update"
+        style="@style/TextViewStyle"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:foreground="?selectableItemBackground"
+        android:gravity="center"
+        android:padding="@dimen/margin_ten"
+        android:text="@string/lbl_update"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

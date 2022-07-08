@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/splash_background">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyle"
+                    android:layout_gravity="bottom"
+                    android:padding="@dimen/margin_ten"
+                    android:text="@string/lbl_campaign_code"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/iv_go_to_location"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/margin_twenty"
+                android:contentDescription="@string/empty"
+                android:scaleType="fitXY"
+                android:src="@drawable/map_image" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/margin_twenty"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_campaign_passcode"
+                    style="@style/TextViewStyle"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_ten">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyle"
+                    android:text="@string/lbl_campaign_title"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_campaign_title"
+                    style="@style/TextViewStyle"
+                    android:layout_marginStart="@dimen/margin_ten"
+                    android:layout_marginTop="@dimen/margin_ten"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyle"
+                    android:layout_marginTop="@dimen/margin_ten"
+                    android:text="@string/lbl_amount"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_campaign_amount"
+                    style="@style/TextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/margin_ten"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_close_campaign_passcode"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/margin_ten"
+        android:src="@drawable/ic_back"
+        android:tint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

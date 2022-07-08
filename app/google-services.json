@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "965579566364",
+    "project_id": "sympathyapp-69368",
+    "storage_bucket": "sympathyapp-69368.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965579566364:android:baae02f14f65b0e01b9ed9",
+        "android_client_info": {
+          "package_name": "com.astadevs.sympathyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965579566364-ic15jf8moe9hqq145lqh6m3f20uu8qll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3VnR1-o6icpD1kqQH5te5Z_0lUfzBTIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965579566364-ic15jf8moe9hqq145lqh6m3f20uu8qll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

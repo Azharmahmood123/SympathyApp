@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_donation"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/splash_background">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyle"
+                    android:layout_gravity="bottom"
+                    android:padding="@dimen/margin_ten"
+                    android:text="@string/lbl_campaign_donation"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_ten">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyle"
+                    android:text="@string/lbl_campaign_title"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_campaign_title"
+                    style="@style/TextViewStyle"
+                    android:layout_marginStart="@dimen/margin_ten"
+                    android:layout_marginTop="@dimen/margin_ten"
+                    android:textSize="14sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <RadioGroup
+                android:id="@+id/rg_donation_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_ten">
+
+                <RadioButton
+                    android:id="@+id/rb_bank_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Account"
+                    android:textColor="@color/text_color_primary" />
+
+                <RadioButton
+                    android:id="@+id/rb_jazz_cash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="JAZZ Cash"
+                    android:textColor="@color/text_color_primary" />
+
+                <RadioButton
+                    android:id="@+id/rb_self"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Self"
+                    android:textColor="@color/text_color_primary" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rg_self_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_ten">
+
+                <RadioButton
+                    android:id="@+id/rb_pick_from_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pick from Location"
+                    android:textColor="@color/text_color_primary" />
+
+                <RadioButton
+                    android:id="@+id/rb_donate_by_hand"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Donate by Hand"
+                    android:textColor="@color/text_color_primary" />
+
+            </RadioGroup>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_bank_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_ten">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyle"
+                    android:text="Back Account No:"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyle"
+                    android:layout_marginTop="@dimen/margin_ten"
+                    android:text="04905930294039284"
+                    android:textSize="@dimen/text_size_normal" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_jazz_cash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_ten">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyle"
+                    android:text="Jazz Cash No:"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyle"
+                    android:layout_marginTop="@dimen/margin_ten"
+                    android:text="090909803790"
+                    android:textSize="@dimen/text_size_normal" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_ten"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_ten">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyle"
+                    android:text="@string/lbl_amount"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/margin_ten"
+                    android:background="@drawable/background_search"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_amount_donated"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_amount_required"
+                        android:inputType="numberSigned"
+                        android:paddingHorizontal="@dimen/margin_five"
+                        android:textColor="@color/text_color_primary" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_add_donation"
+        style="@style/TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:foreground="?selectableItemBackground"
+        android:gravity="center"
+        android:padding="@dimen/margin_ten"
+        android:text="@string/btn_donate"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_close_campaign_donation"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/margin_ten"
+        android:src="@drawable/ic_back"
+        android:tint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
